@@ -4,7 +4,7 @@
 
 ## What is this?
 
-This is a **motherfucking website** with a **motherfucking stylesheet**. And it's **fucking perfect**.
+This is a **motherfucking stylesheet** for a **motherfucking website**. And it's **fucking perfect**.
 
 It's a fork of the legendary [motherfuckingwebsite.com](http://motherfuckingwebsite.com/), but with just enough **style** to make your eyes weep with joy.
 

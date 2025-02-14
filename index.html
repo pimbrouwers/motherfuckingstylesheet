@@ -14,6 +14,7 @@
             margin: 0 auto;
             padding: 1rem
         }
+
         .overflow {
             max-width: 960px;
             overflow-x: scroll;
@@ -130,7 +131,7 @@
             </p>
             <pre><code>preformatted code block</code></pre>
 
-            <h3>Look at this damn description list.</h3>
+            <h3>Even a monkey could figure this shit out.</h3>
             <dl>
                 <dt>Why?</dt>
                 <dd>It's a description list. It describes things. That's it.</dd>
@@ -195,7 +196,7 @@
                 </tfoot>
             </table>
 
-            <h3>Track your shit</h3>
+            <h3>10% completed bitch</h3>
             <progress max="100" value="10">10% completed bitch</progress>
 
             <h3>60% of the time it works everytime</h3>
@@ -241,59 +242,75 @@
             </form>
         </section>
 
-        <h2 id="install">Install this shit</h2>
-
-        <p>You want to make a beautiful website? Good. But you don't want to spend hours tweaking pixels like a fool?
-            Even better. Just include <code>base.css</code> like this:</p>
-
-        <pre><code>&lt;link rel="stylesheet" href="base.css"&gt;</code></pre>
-
-        <p>Want to find base.css? Open DevTools (F12 like a pro), go to the Network tab, reload the page, and look for a
-            file named base.css. go to the Network tab, reload the page, and look for something called base.css. If that
-            sounds too complicated, just right-click anywhere, hit Inspect, and start clicking around like a caffeinated
-            raccoon digging through a trash can. You'll find it. I believe in you.</p>
-
-        <p><strong>Boom.</strong> That's it. Your site is now <em>stunning</em>. No 20MB framework, no 500-class utility
-            system, no CSS-in-JS nonsense. Just <strong>one damn file</strong> that makes everything look good.</p>
-
-        <p>I know what you're thinking,</p>
-
-        <blockquote>"But duuuuude what if I don't want an extra request?"</blockquote>
-
-        <p>Fine. You want <strong>real efficiency</strong>? Paste the whole stylesheet right inside your HTML like a
-            savage:</p>
-
-        <pre><code>&lt;style&gt;
-/* Behold, the only stylesheet you will ever need */
-&lt;/style&gt;</code></pre>
-
-        <p>That's right. No build steps. No dependencies. No BS. Just <strong>pure, uncut, artisanal CSS</strong>.</p>
-
         <h2>Root Variables: The Carrots of Your CSS Diet</h2>
+        <section>
+            <p>Instead of littering your HTML with a hundred utility classes like a chaotic gremlin:</p>
 
-        <p>Instead of littering your HTML with a hundred utility classes like a chaotic gremlin:</p>
 
-        <pre class="overflow"><code>&lt;button class="p-4 text-xl font-bold bg-gray-900 hover:bg-gray-800 active:bg-gray-700 focus:ring-4 focus:ring-indigo-500 disabled:opacity-50"&gt;Click me&lt;/button&gt;</code></pre>
+            <code>&lt;button class="p-4
+                text-xl font-bold
+                bg-gray-900 hover:bg-gray-800 active:bg-gray-700
+                focus:ring-4 focus:ring-indigo-500 disabled:opacity-50"&gt;Click me&lt;/button&gt;</code>
 
-        <p>Seriously, what is this? A **button**, or a secret code to launch a spaceship?</p>
+            <p>Seriously, what is this? A **button**, or a secret code to launch a spaceship?</p>
 
-        <p>Instead, use **root variables** like a civilized human:</p>
+            <p>Instead, use **root variables** like a civilized human:</p>
 
-        <pre><code>button {
-    background: var(--c-button-background);
-    color: var(--c-button-foreground);
-    padding: var(--s3);
-    font-size: var(--f5);
-}</code></pre>
+            <pre><code>button {
+        background: var(--c-button-background);
+        color: var(--c-button-foreground);
+        padding: var(--s3);
+        font-size: var(--f5);
+    }</code></pre>
 
-        <p>Look at that. **Readable. Maintainable. Elegant.**</p>
+            <p>Look at that. **Readable. Maintainable. Elegant.**</p>
 
-        <p>No **class soup**, no searching through a 500-page Tailwind config file, no existential crisis over whether
-            <code>pl-4</code> or <code>px-4</code> is the right choice. Just **pure, uncut CSS**, like nature intended.
-        </p>
+            <p>No **class soup**, no searching through a 500-page Tailwind config file, no existential crisis over
+                whether
+                <code>pl-4</code> or <code>px-4</code> is the right choice. Just **pure, uncut CSS**, like nature
+                intended.
+            </p>
+        </section>
+
+        <h2 id="install">Install</h2>
+        <section>
+            <p>You want to make a beautiful website? Good. But you don't want to spend hours tweaking pixels like a
+                fool?
+                Even better. Just include <code>base.css</code> like this:</p>
+
+            <pre><code>&lt;link rel="stylesheet" href="base.css"&gt;</code></pre>
+
+            <p>Want to find base.css? Open DevTools (F12 like a pro), go to the Network tab, reload the page, and look
+                for a
+                file named base.css. go to the Network tab, reload the page, and look for something called base.css. If
+                that
+                sounds too complicated, just right-click anywhere, hit Inspect, and start clicking around like a
+                caffeinated
+                raccoon digging through a trash can. You'll find it. I believe in you.</p>
+
+            <p><strong>Boom.</strong> That's it. Your site is now <em>stunning</em>. No 20MB framework, no 500-class
+                utility
+                system, no CSS-in-JS nonsense. Just <strong>one damn file</strong> that makes everything look good.</p>
+
+            <p>I know what you're thinking,</p>
+
+            <blockquote>"But duuuuude what if I don't want an extra request?"</blockquote>
+
+            <p>Fine. You want <strong>real efficiency</strong>? Paste the whole stylesheet right inside your HTML like a
+                savage:</p>
+
+            <pre><code>&lt;style&gt;
+    /* Behold, the only stylesheet you will ever need */
+    &lt;/style&gt;</code></pre>
+
+            <p>That's right. No build steps. No dependencies. No BS. Just <strong>pure, uncut, artisanal CSS</strong>.
+            </p>
+        </section>
 
         <h2>Got a suggestion?</h2>
-        <p><a href="https://github.com/pimbrouwers/motherfuckingstylesheet/pulls">Pull request</a> that shit.</p>
+        <section>
+            <p><a href="https://github.com/pimbrouwers/motherfuckingstylesheet/pulls">Pull request</a> that motherfucker.</p>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 <a href="motherfuckingstylesheet.com">motherfuckingstylesheet.com</a></p>
