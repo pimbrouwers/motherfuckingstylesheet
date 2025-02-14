@@ -61,11 +61,11 @@ dt, summary { font-weight: 700 }
 details { display: block }
 summary { display: list-item; cursor: pointer }
 a { color: var(--c-link); background-color: transparent }
-code, kbd, samp, mark, time, pre > code {
+code, kbd, samp, mark, time, pre {
     font-family: var(--font-mono); font-size: var(--f5);
     color: var(--c-button-foreground);
     background: var(--c-button-background) }
-pre > code { display: block; width: 100%; padding: var(--s0) }
+pre { padding: var(--s0) var(--s1); white-space: pre-wrap }
 hr {
     box-sizing: content-box; height: 1px; overflow: visible;
     background: var(--c-border); border-style: none }

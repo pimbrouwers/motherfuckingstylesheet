@@ -14,11 +14,6 @@
             margin: 0 auto;
             padding: 1rem
         }
-
-        .overflow {
-            max-width: 960px;
-            overflow-x: scroll;
-        }
     </style>
 </head>
 
@@ -246,22 +241,17 @@
         <section>
             <p>Instead of littering your HTML with a hundred utility classes like a chaotic gremlin:</p>
 
-
-            <code>&lt;button class="p-4
-                text-xl font-bold
-                bg-gray-900 hover:bg-gray-800 active:bg-gray-700
-                focus:ring-4 focus:ring-indigo-500 disabled:opacity-50"&gt;Click me&lt;/button&gt;</code>
-
+            <pre><code>&lt;button class="p-4 text-xl font-bold bg-gray-900 hover:bg-gray-800 active:bg-gray-700 focus:ring-4 focus:ring-indigo-500 disabled:opacity-50"&gt;Click me&lt;/button&gt;</code></pre>
             <p>Seriously, what is this? A **button**, or a secret code to launch a spaceship?</p>
 
             <p>Instead, use **root variables** like a civilized human:</p>
 
             <pre><code>button {
-        background: var(--c-button-background);
-        color: var(--c-button-foreground);
-        padding: var(--s3);
-        font-size: var(--f5);
-    }</code></pre>
+  background: var(--c-button-background);
+  color: var(--c-button-foreground);
+  padding: var(--s3);
+  font-size: var(--f5);
+}</code></pre>
 
             <p>Look at that. **Readable. Maintainable. Elegant.**</p>
 
@@ -301,7 +291,7 @@
 
             <pre><code>&lt;style&gt;
     /* Behold, the only stylesheet you will ever need */
-    &lt;/style&gt;</code></pre>
+&lt;/style&gt;</code></pre>
 
             <p>That's right. No build steps. No dependencies. No BS. Just <strong>pure, uncut, artisanal CSS</strong>.
             </p>
@@ -313,8 +303,13 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 <a href="motherfuckingstylesheet.com">motherfuckingstylesheet.com</a></p>
+        <p>&copy;<span id="current-year">1986</span> <a href="https://www.motherfuckingstylesheet.com">motherfuckingstylesheet.com</a></p>
     </footer>
+    <script>
+        const currentYear = new Date(Date.now()).getFullYear()
+        const $currentYear = document.getElementById("current-year")
+        $currentYear.innerText = currentYear
+    </script>
 </body>
 
 </html>
