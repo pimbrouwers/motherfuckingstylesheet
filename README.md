@@ -1,12 +1,12 @@
 # motherfuckingstylesheet
 
-[motherfuckingstylesheet.com](http://motherfuckingstylesheet.com)
+[motherfuckingstylesheet.com](https://www.motherfuckingstylesheet.com)
 
 ## What is this?
 
 This is a **motherfucking website** with a **motherfucking stylesheet**. And it's **fucking perfect**.
 
-It's a fork of the legendary [motherfuckingwebsite.com](http://motherfuckingwebsite.com/), but with just enough **style** to make your eyes weep with joy.
+It's a fork of the legendary [motherfuckingwebsite.com](https://motherfuckingwebsite.com/), but with just enough **style** to make your eyes weep with joy.
 
 ## Why This Exists
 
