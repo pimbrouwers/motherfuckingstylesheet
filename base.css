@@ -20,10 +20,11 @@
     --c-background: white;
     --c-foreground: var(--c-primary);
     --c-border: var(--c-primary);
-    --c-button-foreground: var(--c-primary);
-    --c-button-background: lightgray;
+    --c-block-foreground: var(--c-primary);
+    --c-block-background: lightgray;
     --c-link: var(--c-primary);
     --c-error: crimson;
+    --c-highlight: dodgerblue;
 
     --font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
     --font-mono: Consolas,monaco,monospace;
@@ -63,8 +64,8 @@ summary { display: list-item; cursor: pointer }
 a { color: var(--c-link); background-color: transparent }
 code, kbd, samp, mark, time, pre {
     font-family: var(--font-mono); font-size: var(--f5);
-    color: var(--c-button-foreground);
-    background: var(--c-button-background) }
+    color: var(--c-block-foreground);
+    background: var(--c-block-background) }
 pre { padding: var(--s0) var(--s1); white-space: pre-wrap }
 hr {
     box-sizing: content-box; height: 1px; overflow: visible;
@@ -101,7 +102,7 @@ button, .button, input[type='submit'], input[type='reset'], input[type='button']
     display: inline-block;
     padding: var(--s2);
     text-decoration: none;
-    color: var(--c-button-foreground); background: var(--c-button-background);
+    color: var(--c-block-foreground); background: var(--c-block-background);
     border: 1px solid var(--c-border); cursor: pointer }
 
 /* Forms */
@@ -110,7 +111,7 @@ button,input { overflow: visible }
 button,select { text-transform: none }
 [type="button"],[type="reset"],[type="submit"],button { appearance: button; }
 [type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner,button::-moz-focus-inner { border-style: none; padding: 0 }
-[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring,button:-moz-focusring { outline: 1px dotted ButtonText }
+[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring,button:-moz-focusring { outline: 1px dotted var(--c-block-foreground) }
 legend {
     box-sizing: border-box; display: table; max-width: 100%; padding: 0;
     color: inherit; white-space: normal }

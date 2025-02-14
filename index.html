@@ -241,17 +241,23 @@
         <section>
             <p>Instead of littering your HTML with a hundred utility classes like a chaotic gremlin:</p>
 
-            <pre><code>&lt;button class="p-4 text-xl font-bold bg-gray-900 hover:bg-gray-800 active:bg-gray-700 focus:ring-4 focus:ring-indigo-500 disabled:opacity-50"&gt;Click me&lt;/button&gt;</code></pre>
+            <pre><code>&lt;button class="p-4 text-xl font-bold bg-black hover:bg-gray-800 active:bg-gray-700 focus:ring-4 focus:ring-indigo-500 disabled:opacity-50"&gt;Click me&lt;/button&gt;</code></pre>
             <p>Seriously, what is this? A **button**, or a secret code to launch a spaceship?</p>
 
-            <p>Instead, use **root variables** like a civilized human:</p>
+            <p>Instead, use **variables** like a civilized human:</p>
 
             <pre><code>button {
-  background: var(--c-button-background);
-  color: var(--c-button-foreground);
   padding: var(--s3);
-  font-size: var(--f5);
-}</code></pre>
+  font-size: var(--f4); font-weight: 700;
+  background: var(--c-foreground);
+  color: var(--c-background) }
+button:hover {
+  background: var(--c-background);
+  color: var(--c-foreground) }
+button:focus {
+  outline: 1px solid var(--c-highlight); }
+button:disabled {
+    opacity: .5 } </code></pre>
 
             <p>Look at that. **Readable. Maintainable. Elegant.**</p>
 
