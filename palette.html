@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motherfucking Stylesheet</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        header,
+        main,
+        footer {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 1rem
+        }
+
+        section { clear: both; overflow: hidden }
+
+        .palette { padding-top: 50% }
+        .palette__variants { clear: both }
+        .palette__variant { float:left; width: 50%; padding-top: 50% }
+        .palette__label { display: inline-block; padding: .25rem }
+
+        .palette--gray { background: var(--c-light-gray); color: var(--c-dark-gray) }
+        .palette--gray .palette__variant--primary { background: var(--c-gray) }
+        .palette--gray .palette__variant--dark { background: var(--c-dark-gray); color: var(--c-light-gray) }
+
+        .palette--red { background: var(--c-light-red); color: var(--c-dark-red) }
+        .palette--red .palette__variant--primary { background: var(--c-red) }
+        .palette--red .palette__variant--dark { background: var(--c-dark-red); color: var(--c-light-red) }
+
+        .palette--pink { background: var(--c-light-pink); color: var(--c-dark-pink) }
+        .palette--pink .palette__variant--primary { background: var(--c-pink) }
+        .palette--pink .palette__variant--dark { background: var(--c-dark-pink); color: var(--c-light-pink) }
+
+        .palette--purple { background: var(--c-light-purple); color: var(--c-dark-purple) }
+        .palette--purple .palette__variant--primary { background: var(--c-purple) }
+        .palette--purple .palette__variant--dark { background: var(--c-dark-purple); color: var(--c-light-purple) }
+
+        .palette--blue { background: var(--c-light-blue); color: var(--c-dark-blue) }
+        .palette--blue .palette__variant--primary { background: var(--c-blue) }
+        .palette--blue .palette__variant--dark { background: var(--c-dark-blue); color: var(--c-light-blue) }
+
+        .palette--green { background: var(--c-light-green); color: var(--c-dark-green) }
+        .palette--green .palette__variant--primary { background: var(--c-green) }
+        .palette--green .palette__variant--dark { background: var(--c-dark-green); color: var(--c-light-green) }
+
+        .palette--yellow { background: var(--c-light-yellow); color: var(--c-dark-yellow) }
+        .palette--yellow .palette__variant--primary { background: var(--c-yellow) }
+        .palette--yellow .palette__variant--dark { background: var(--c-dark-yellow); color: var(--c-light-yellow) }
+
+        .palette--orange { background: var(--c-light-orange); color: var(--c-dark-orange) }
+        .palette--orange .palette__variant--primary { background: var(--c-orange) }
+        .palette--orange .palette__variant--dark { background: var(--c-dark-orange); color: var(--c-light-orange) }
+    </style>
+</head>
+
+<body id="top">
+    <header>
+        <nav>
+            <a href="#gray">gray</a>
+            <span> | </span>
+            <a href="#red">red</a>
+            <span> | </span>
+            <a href="#pink">pink</a>
+            <span> | </span>
+            <a href="#purple">purple</a>
+            <span> | </span>
+            <a href="#blue">blue</a>
+            <span> | </span>
+            <a href="#green">green</a>
+            <span> | </span>
+            <a href="#yellow">yellow</a>
+            <span> | </span>
+            <a href="#orange">orange</a>
+        </nav>
+    </header>
+    <main>
+        <section id="gray">
+            <h2>gray</h2>
+            <blockquote>gray is the color of an overcast sky.</blockquote>
+            <div class="palette palette--gray">
+                <span class="palette__label">var(--c-light-gray)</span>
+                <div class="palette__variants">
+                    <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-gray)</span></div>
+                    <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-gray)</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="red">
+            <h2>red</h2>
+            <blockquote>red is the color of a ripe tomato.</blockquote>
+            <div class="palette palette--red">
+                <span class="palette__label">var(--c-light-red)</span>
+                <div class="palette__variants">
+                    <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-red)</span></div>
+                    <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-red)</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pink">
+            <h2>pink</h2>
+            <blockquote>pink is the color of a cherry blossom.</blockquote>
+            <div class="palette palette--pink">
+                <span class="palette__label">var(--c-light-pink)</span>
+                <div class="palette__variants">
+                    <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-pink)</span></div>
+                    <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-pink)</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="purple">
+            <h2>purple</h2>
+            <blockquote>purple is the color of a ripe eggplant.</blockquote>
+            <div class="palette palette--purple">
+                <span class="palette__label">var(--c-light-purple)</span>
+                <div class="palette__variants">
+                    <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-purple)</span></div>
+                    <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-purple)</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blue">
+            <h2>blue</h2>
+            <blockquote>blue is the color of a clear sky.</blockquote>
+            <div class="palette palette--blue">
+                <span class="palette__label">var(--c-light-blue)</span>
+                <div class="palette__variants">
+                    <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-blue)</span></div>
+                    <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-blue)</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="green">
+            <h2>green</h2>
+            <blockquote>green is the color of a fresh lime.</blockquote>
+            <div class="palette palette--green">
+                <span class="palette__label">var(--c-light-green)</span>
+                <div class="palette__variants">
+                    <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-green)</span></div>
+                    <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-green)</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="yellow">
+            <h2>yellow</h2>
+            <blockquote>yellow is the color of a ripe banana.</blockquote>
+            <div class="palette palette--yellow">
+                <span class="palette__label">var(--c-light-yellow)</span>
+                <div class="palette__variants">
+                    <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-yellow)</span></div>
+                    <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-yellow)</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="orange">
+            <h2>orange</h2>
+            <blockquote>orange is the color of a ripe tangerine.</blockquote>
+            <div class="palette palette--orange">
+                <span class="palette__label">var(--c-light-orange)</span>
+                <div class="palette__variants">
+                    <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-orange)</span></div>
+                    <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-orange)</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="current-year">1986</span> <a href="https://www.motherfuckingstylesheet.com">motherfuckingstylesheet.com</a></p>
+    </footer>
+    <script>
+        const currentYear = new Date(Date.now()).getFullYear()
+        const $currentYear = document.getElementById("current-year")
+        $currentYear.innerText = currentYear
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJFKJQH586"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-RJFKJQH586');
+    </script>
+</body>
+
+</html>

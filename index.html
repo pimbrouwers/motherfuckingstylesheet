@@ -220,15 +220,13 @@
                         <input type="checkbox" id="newsletter" name="newsletter">
                     </div>
                     <div>
-                        <label for="updates">Receive updates:</label>
-                        <input type="checkbox" id="updates" name="updates">
-                    </div>
-                    <div>
-                        <p>Gender:</p>
-                        <label for="male">Male</label>
-                        <input type="radio" id="male" name="gender" value="male">
-                        <label for="female">Female</label>
-                        <input type="radio" id="female" name="gender" value="female">
+                        <label>Are you interested in hearing about updates?</label>
+                        <div>
+                            <label for="yes">Yes</label>
+                            <input type="radio" id="yes" name="updates" value="yes">
+                            <label for="no">No</label>
+                            <input type="radio" id="no" name="updates" value="no">
+                        </div>
                     </div>
                 </fieldset>
                 <label for="message">Message:</label>
@@ -249,15 +247,15 @@
             <pre><code>button {
   padding: var(--s3);
   font-size: var(--f4); font-weight: 700;
-  background: var(--c-foreground);
-  color: var(--c-background) }
+  background: var(--c-black);
+  color: var(--c-white) }
 
 button:hover {
-  background: var(--c-background);
-  color: var(--c-foreground) }
+  background: var(--c-gray);
+  color: var(--c-black) }
 
 button:focus {
-  outline: 1px solid var(--c-highlight); }
+  outline: 1px solid var(--c-dark-purple); }
 
 button:disabled {
     opacity: .5 } </code></pre>
@@ -269,6 +267,8 @@ button:disabled {
                 <code>pl-4</code> or <code>px-4</code> is the right choice. Just **pure, uncut CSS**, like nature
                 intended.
             </p>
+
+            <p>See the whole motherfucking <a href="palette.html" target="_blank">color palette</a>, even Picasso doesn't have shit on this.</p>
         </section>
 
         <h2 id="install">Install</h2>

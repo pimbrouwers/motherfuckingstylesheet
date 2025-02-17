@@ -16,14 +16,41 @@
     --lh-title: var(--lh);
     --lh-solid: 1;
 
-    --c-primary: black;
-    --c-background: white;
+    --c-black: hsl(0,0%, 0%);
+    --c-white: hsl(0, 0%, 100%);
+    --c-gray: hsl(0, 0%, 75%);
+    --c-light-gray: hsl(0, 0%, 95%);
+    --c-dark-gray: hsl(0, 0%, 50%);
+    --c-red: hsl(348, 83%, 47%);
+    --c-light-red: hsl(348, 83%, 90%);
+    --c-dark-red: hsl(348, 83%, 25%);
+    --c-pink: hsl(351, 100%, 86%);
+    --c-light-pink: hsl(351, 100%, 95%);
+    --c-dark-pink: hsl(351, 70%, 60%);
+    --c-purple: hsl(271, 76%, 65%);
+    --c-dark-purple: hsl(271, 76%, 40%);
+    --c-light-purple: hsl(271, 76%, 95%);
+    --c-blue: hsl(210, 100%, 65%);
+    --c-dark-blue: hsl(210, 100%, 40%);
+    --c-light-blue: hsl(210, 100%, 90%);
+    --c-green: hsl(157, 90%, 65%);
+    --c-light-green: hsl(157, 100%, 90%);
+    --c-dark-green: hsl(157, 100%, 35%);
+    --c-yellow: hsl(51, 100%, 50%);
+    --c-light-yellow: hsl(51, 100%, 90%);
+    --c-dark-yellow: hsl(51, 100%, 30%);
+    --c-orange: hsl(33, 100%, 50%);
+    --c-light-orange: hsl(33, 100%, 90%);
+    --c-dark-orange: hsl(33, 100%, 30%);
+
+    --c-primary: var(--c-black);
+    --c-background: var(--c-white);
     --c-foreground: var(--c-primary);
     --c-border: var(--c-primary);
     --c-block-foreground: var(--c-primary);
-    --c-block-background: lightgray;
+    --c-block-background: var(--c-gray);
     --c-link: var(--c-primary);
-    --c-error: crimson;
+    --c-error: var(--c-red);
 
     --font: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
     --font-heading: Verdana,Geneva,sans-serif;
@@ -117,7 +144,7 @@ legend {
     color: inherit; white-space: normal }
 progress { vertical-align: baseline }
 textarea { overflow: auto }
-[type="checkbox"],[type="radio"] { box-sizing: border-box; padding: 0 }
+[type="checkbox"],[type="radio"] { box-sizing: border-box; padding: 0; vertical-align: middle }
 [type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button { height: auto }
 [type="search"] { appearance: textfield; appearance: textfield; outline-offset:-2px }
 [type="search"]::-webkit-search-decoration { appearance: none }
