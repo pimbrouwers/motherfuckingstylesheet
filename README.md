@@ -30,7 +30,7 @@ If you want to live dangerously, copy-paste the styles directly into your `<head
 
 ## For real
 
-The past several years I've swirling and intermingling the concepts of atomic and classless CSS. I love elements of both. With classless CSS you can achieve a remarkable aesthetic using only semantic HTML. Love this. Atomic CSS creates a wonderful uniformity by imposing a design system and consistency by means of convention.
+The past several years I've been swirling and intermingling the concepts of atomic and classless CSS. I love elements of both. With classless CSS you can achieve a remarkable aesthetic using only semantic HTML. Love this. Atomic CSS creates a wonderful uniformity by imposing a design system and consistency by means of convention.
 
 Both approaches aren't without their limitations either. Classless can truly only take you so far, before bespoke CSS is necessary. At which point you're now left to conjure up the same sorts of concepts you would on every project: spacing, color paletee, font sizes etc. Atomic CSS on the other hand can lead to crazy, obscure class definitions that begin losing all meaning (i.e., buttons are a great example of this).
 
