@@ -9,75 +9,57 @@
     --f1: 2.5em;
     --f2: 1.875em;
     --f3: 1.4625em;
-    --f4: 1.25em;
-    --f5: 1em;
+    --f4: 1.3125em;
+    --f5: 1.25em;
+    --f6: 1em;
 
     --lh: 1.25;
     --lh-title: var(--lh);
     --lh-solid: 1;
 
-    --c-black: hsl(0,0%, 0%);
-    --c-white: hsl(0, 0%, 100%);
-    --c-gray: hsl(0, 0%, 75%);
-    --c-light-gray: hsl(0, 0%, 95%);
-    --c-dark-gray: hsl(0, 0%, 50%);
-    --c-red: hsl(348, 83%, 47%);
-    --c-light-red: hsl(348, 83%, 90%);
-    --c-dark-red: hsl(348, 83%, 25%);
-    --c-pink: hsl(351, 100%, 86%);
-    --c-light-pink: hsl(351, 100%, 95%);
-    --c-dark-pink: hsl(351, 70%, 60%);
-    --c-purple: hsl(271, 76%, 65%);
-    --c-dark-purple: hsl(271, 76%, 40%);
-    --c-light-purple: hsl(271, 76%, 95%);
-    --c-blue: hsl(210, 100%, 65%);
-    --c-dark-blue: hsl(210, 100%, 40%);
-    --c-light-blue: hsl(210, 100%, 90%);
-    --c-green: hsl(157, 90%, 65%);
-    --c-light-green: hsl(157, 100%, 90%);
-    --c-dark-green: hsl(157, 100%, 35%);
-    --c-yellow: hsl(51, 100%, 50%);
-    --c-light-yellow: hsl(51, 100%, 90%);
-    --c-dark-yellow: hsl(51, 100%, 30%);
-    --c-orange: hsl(33, 100%, 50%);
-    --c-light-orange: hsl(33, 100%, 90%);
-    --c-dark-orange: hsl(33, 100%, 30%);
-
-    --c-primary: var(--c-black);
-    --c-background: var(--c-white);
+    --c-primary: hsl(0,0%, 0%);
+    --c-background: hsl(0, 0%, 100%);
     --c-foreground: var(--c-primary);
     --c-border: var(--c-primary);
     --c-block-foreground: var(--c-primary);
-    --c-block-background: var(--c-gray);
+    --c-block-background: hsl(0, 0%, 75%);
     --c-link: var(--c-primary);
-    --c-error: var(--c-red);
+    --c-error: hsl(348, 83%, 47%);
 
-    --font: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
-    --font-heading: Verdana,Geneva,sans-serif;
-    --font-mono: Consolas,monaco,monospace;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-mono: Consolas, Monaco, monospace;
+}
 
-    line-height: var(--lh);
-    font-family: var(--font);
-    font-weight: 400;
-    font-style: normal;
-    font-size: clamp(14px, 1.5vw, 16px);
+@media (prefers-color-scheme: dark) {
+    :root {
+        --c-background: hsl(0, 0%, 7%);
+        --c-foreground: hsl(0, 0%, 95%);
+        --c-block-background: hsl(0, 0%, 12%);
+        --c-block-foreground: hsl(0, 0%, 95%);
+        --c-border: hsl(0, 0%, 25%);
+        --c-link: hsl(210, 100%, 70%);
+    }
 }
 
 /* Document */
 *,*::before,*::after { box-sizing: border-box; color: inherit }
-html { text-size-adjust: 100%; background: var(--c-background); color: var(--c-foreground) }
+html {
+    line-height: var(--lh); text-size-adjust: 100%;
+    font-family: var(--font); font-weight: 400; font-style: normal; font-size: clamp(14px, 1.5vw, 16px);
+    background: var(--c-background); color: var(--c-foreground) }
 body { margin: 0 }
 main { display: block }
 template { display: none }
 [hidden] { display: none }
 
 /* Headings */
-h1, h2, h3, h4, h5 { margin: 1em 0 .125em; font-family: var(--font-heading) }
+h1, h2, h3, h4, h5, h6 { margin: 1em 0 .25em; font-family: var(--font) }
 h1 { font-size: var(--f1) }
 h2 { font-size: var(--f2) }
 h3 { font-size: var(--f3) }
 h4 { font-size: var(--f4) }
 h5 { font-size: var(--f5) }
+h6 { font-size: var(--f6) }
 
 /* Typography */
 p, ol, ol ol, ul, ul ul, dl, table, blockquote {
@@ -90,9 +72,8 @@ details { display: block }
 summary { display: list-item; cursor: pointer }
 a { color: var(--c-link); background-color: transparent }
 code, kbd, samp, mark, time, pre {
-    font-family: var(--font-mono); font-size: var(--f5);
-    color: var(--c-block-foreground);
-    background: var(--c-block-background) }
+    font-family: var(--font-mono);
+    color: var(--c-block-foreground); background: var(--c-block-background) }
 pre { padding: var(--s0) var(--s1); white-space: pre-wrap }
 hr {
     box-sizing: content-box; height: 1px; overflow: visible;
@@ -126,42 +107,39 @@ img { border-style: none }
 
 /* Buttons */
 button, .button, input[type='submit'], input[type='reset'], input[type='button'] {
-    display: inline-block;
-    padding: var(--s2);
-    text-decoration: none;
+    display: inline-block; appearance: button; overflow: visible;
+    padding: var(--s1) var(--s2);
+    font-family: inherit; font-size: 100%; text-decoration: none;
     color: var(--c-block-foreground); background: var(--c-block-background);
     border: 1px solid var(--c-border); cursor: pointer }
+[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner,button::-moz-focus-inner {
+    border-style: none; padding: 0 }
+[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring,button:-moz-focusring {
+    outline: 1px dotted var(--c-block-foreground) }
 
 /* Forms */
-button,input,optgroup,select,textarea { font-family: inherit; font-size: 100%; line-height: var(--lh); margin: 0 }
-button,input { overflow: visible }
-button,select { text-transform: none }
-[type="button"],[type="reset"],[type="submit"],button { appearance: button; }
-[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner,button::-moz-focus-inner { border-style: none; padding: 0 }
-[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring,button:-moz-focusring { outline: 1px dotted var(--c-block-foreground) }
-legend {
-    box-sizing: border-box; display: table; max-width: 100%; padding: 0;
-    color: inherit; white-space: normal }
-progress { vertical-align: baseline }
-textarea { overflow: auto }
-[type="checkbox"],[type="radio"] { box-sizing: border-box; padding: 0; vertical-align: middle }
+input, textarea, select, fieldset { border: 1px solid var(--c-border) }
+input + *, textarea + *, select + *, fieldset + *  { margin-block-start: var(--s2) }
+input, textarea, select  {
+    display: block; width: 100%;
+    font-family: inherit; font-size: 100%; line-height: var(--lh); margin: 0;
+    color: var(--c-foreground); background: var(--c-background) }
+input:user-invalid, select:user-invalid, textarea:user-invalid { border: 1px dashed var(--c-error) }
+input, textarea { padding: .3125rem var(--s2) }
+input { overflow: visible }
+textarea { resize: vertical; overflow: auto }
+select { padding: var(--s1) var(--s2); text-transform: none }
+[type="checkbox"],[type="radio"] { display: inline-block; width: auto; padding: 0 }
 [type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button { height: auto }
-[type="search"] { appearance: textfield; appearance: textfield; outline-offset:-2px }
+[type="search"] { appearance: textfield; outline-offset:-2px }
 [type="search"]::-webkit-search-decoration { appearance: none }
 ::-webkit-file-upload-button { appearance: button; font: inherit }
 [readonly], [disabled] { opacity: .6 }
 [disabled] { cursor: not-allowed }
-input, textarea, select, fieldset { border: 1px solid var(--c-border) }
-textarea, select,
-input:not([type=button]):not([type=checkbox]):not([type=color]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit]) { display: block; width: 100% }
-input:not([type=button]):not([type=checkbox]):not([type=color]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit]) + *,
-textarea + *, select + *, fieldset + * { margin-block-start: var(--s2) }
-input, textarea { padding: .3125rem var(--s2) }
-input:user-invalid, select:user-invalid, textarea:user-invalid { border: 1px dashed var(--c-error) }
-form label { display: inline-block; margin-bottom: var(--s1) }
-fieldset {
-    max-width: -webkit-fill-available;
-    padding: var(--s2) }
-legend { padding: var(--s1) var(--s2); font-weight: 700 }
-select { padding: var(--s1) var(--s2) }
-textarea { width: 100%; resize: vertical }
+form label { display: inline-block; margin: var(--s1) 0 0 0 }
+fieldset { width: 100%; padding: var(--s2) }
+legend {
+    box-sizing: border-box; display: table; max-width: 100%; padding: 0;
+    padding: var(--s1) var(--s2); font-weight: 700;
+    color: inherit; white-space: normal }
+progress { vertical-align: baseline }
