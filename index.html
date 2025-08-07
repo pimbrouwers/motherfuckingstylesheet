@@ -6,19 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motherfucking Stylesheet</title>
     <link rel="stylesheet" href="base.css">
-    <style>
-        header,
-        main,
-        footer {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 1rem
-        }
-    </style>
 </head>
 
 <body id="top">
-    <header>
+    <header class="container">
         <nav>
             <a href="#lightweight">Lightweight</a>
             <span> | </span>
@@ -31,7 +22,7 @@
             <a href="#install">Install That Shit</a>
         </nav>
     </header>
-    <main>
+    <main class="container">
         <h1>This is a motherfucking website with a stylesheet.</h1>
         <p><i>And it's fucking perfect.</i></p>
 
@@ -63,7 +54,7 @@
 
         <ol>
             <li>
-                <h6 id="lightweight">It's fucking lightweight</h6>
+                <div id="lightweight"><strong>It's fucking lightweight</strong></div>
 
                 <p>This entire page weighs less than the gradient-meshed facebook logo on your fucking Wordpress site.
                     Did you
@@ -74,7 +65,7 @@
                     your site? You piece of shit.</p>
             </li>
             <li>
-                <h6 id="responsive">It's responsive</h6>
+                <div id="responsive"><strong>It's responsive</strong></div>
 
                 <p>You dumbass. You thought you needed media queries to be responsive, but no. Responsive means that it
                     responds
@@ -83,7 +74,7 @@
                     motherfucking Tamagotchi.</p>
             </li>
             <li>
-                <h6 id="works">It fucking works</h6>
+                <div id="works"><strong>It fucking works</strong></div>
 
                 <p>Look at this shit. You can read it ... that is, if you can read, motherfucker. It makes sense. It has
                     motherfucking hierarchy. It's using HTML5 tags so you and your bitch-ass browser know what the
@@ -114,7 +105,7 @@
 
         <blockquote cite="https://www.vitsoe.com/us/about/good-design">"Good design is as little design as
             possible."<br>
-            - some German motherfucker
+            <i>- some German motherfucker</i>
         </blockquote>
 
         <h2 id="other">And the rest is fucking beautiful too</h2>
@@ -199,10 +190,10 @@
 
             <h3>Fill out this shit</h3>
             <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
                 <fieldset>
                     <legend>Personal Information</legend>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email">
                     <label for="location">Location:</label>
@@ -220,13 +211,12 @@
                         <input type="checkbox" id="newsletter" name="newsletter">
                     </div>
                     <div>
-                        <label>Are you interested in hearing about updates?</label>
-                        <div>
-                            <label for="yes">Yes</label>
-                            <input type="radio" id="yes" name="updates" value="yes">
-                            <label for="no">No</label>
-                            <input type="radio" id="no" name="updates" value="no">
-                        </div>
+                        <p>Are you interested in hearing about updates?</p>
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="yes" name="updates" value="yes">
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="updates" value="no">
+
                     </div>
                 </fieldset>
                 <label for="message">Message:</label>
@@ -309,7 +299,7 @@ button:disabled {
             <p><a href="https://github.com/pimbrouwers/motherfuckingstylesheet/pulls">Pull request</a> that motherfucker.</p>
         </section>
     </main>
-    <footer>
+    <footer class="container">
         <p>&copy;<span id="current-year">1986</span> <a href="https://www.motherfuckingstylesheet.com">motherfuckingstylesheet.com</a></p>
     </footer>
     <script>
