@@ -1,5 +1,5 @@
 :root {
-    --s0: .125rem;
+    --s0: 1px;
     --s1: .25rem;
     --s2: .5rem;
     --s3: 1rem;
@@ -18,14 +18,42 @@
     --lh-title: var(--lh);
     --lh-solid: 1;
 
-    --c-primary: hsl(0,0%, 0%);
-    --c-background: hsl(0, 0%, 100%);
+    --c-black: hsl(0,0%, 7%);
+    --c-near-black: hsl(0, 0%, 20%);
+    --c-white: hsl(0, 0%, 100%);
+    --c-gray: hsl(0, 0%, 75%);
+    --c-light-gray: hsl(0, 0%, 95%);
+    --c-dark-gray: hsl(0, 0%, 50%);
+    --c-red: hsl(348, 83%, 47%);
+    --c-light-red: hsl(348, 83%, 90%);
+    --c-dark-red: hsl(348, 83%, 25%);
+    --c-pink: hsl(351, 100%, 86%);
+    --c-light-pink: hsl(351, 100%, 95%);
+    --c-dark-pink: hsl(351, 70%, 60%);
+    --c-purple: hsl(271, 76%, 65%);
+    --c-dark-purple: hsl(271, 76%, 40%);
+    --c-light-purple: hsl(271, 76%, 95%);
+    --c-blue: hsl(210, 100%, 65%);
+    --c-dark-blue: hsl(210, 100%, 40%);
+    --c-light-blue: hsl(210, 100%, 90%);
+    --c-green: hsl(157, 90%, 65%);
+    --c-light-green: hsl(157, 100%, 90%);
+    --c-dark-green: hsl(157, 100%, 35%);
+    --c-yellow: hsl(51, 100%, 50%);
+    --c-light-yellow: hsl(51, 100%, 90%);
+    --c-dark-yellow: hsl(51, 100%, 30%);
+    --c-orange: hsl(33, 100%, 50%);
+    --c-light-orange: hsl(33, 100%, 90%);
+    --c-dark-orange: hsl(33, 100%, 30%);
+
+    --c-primary: var(--c-black);
+    --c-background: var(--c-white);
     --c-foreground: var(--c-primary);
-    --c-border: var(--c-primary);
     --c-block-foreground: var(--c-primary);
-    --c-block-background: hsl(0, 0%, 75%);
+    --c-block-background: var(--c-gray);
+    --c-border: var(--c-gray);
     --c-link: var(--c-primary);
-    --c-error: hsl(348, 83%, 47%);
+    --c-error: var(--c-red);
 
     --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     --font-mono: Consolas, Monaco, monospace;
@@ -33,12 +61,12 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --c-background: hsl(0, 0%, 7%);
-        --c-foreground: hsl(0, 0%, 95%);
-        --c-block-background: hsl(0, 0%, 12%);
-        --c-block-foreground: hsl(0, 0%, 95%);
-        --c-border: hsl(0, 0%, 25%);
-        --c-link: hsl(210, 100%, 70%);
+        --c-background: var(--c-black);
+        --c-foreground: var(--c-light-gray);
+        --c-block-background: var(--c-near-black);
+        --c-block-foreground: var(--c-light-gray);
+        --c-border: var(--c-near-black);
+        --c-link: var(--c-blue);
     }
 }
 
@@ -53,6 +81,9 @@ html {
 main { display: block }
 template { display: none }
 [hidden] { display: none }
+p, ol, ol ol, ul, ul ul, dl, table, blockquote, details, pre, form,
+input:not([type="checkbox"],[type="radio"])  + *, textarea + *, select + *, fieldset + * {
+    margin-block-start: var(--s3) }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 { margin-block-start: var(--s4) }
@@ -64,7 +95,6 @@ h5 { font-size: var(--f5) }
 h6 { font-size: var(--f6) }
 
 /* Typography */
-p, ol, ol ol, ul, ul ul, dl, table, blockquote, details, pre { margin-block-start: var(--s3) }
 ol, ul { padding-inline-start: var(--s4) }
 dt, summary { font-weight: 700 }
 dd { margin: 0 0 var(--s3) }
@@ -81,11 +111,11 @@ hr {
     background: var(--c-border); border-style: none }
 abbr[title] { border-bottom: none; text-decoration: underline; text-decoration: underline dotted }
 b,strong { font-weight: bolder }
-small { font-size: var(--f7) }
-sub, sup { font-size: var(--f7); line-height: 0; position: relative; vertical-align: baseline }
+small, sub, sup { font-size: var(--f7) }
+sub, sup { line-height: 0; position: relative; vertical-align: baseline }
 sub { bottom: calc(-1 * var(--s1)) }
 sup { top: calc(-1 * var(--s1)) }
-blockquote { padding: var(--s2) var(--s3); border-left: var(--s1) solid var(--c-border) }
+blockquote { padding: var(--s2); border-left: var(--s1) solid var(--c-border) }
 table { width: 100%; border-collapse: collapse; text-align: left; vertical-align: top }
 table caption { margin-bottom: var(--s1); font-style: italic }
 th, td { padding: var(--s1); border-bottom: var(--s0) solid var(--c-border) }
@@ -101,17 +131,20 @@ button, .button, input[type='submit'], input[type='reset'], input[type='button']
     width: auto; appearance: button; overflow: visible; padding: var(--s2);
     text-decoration: none; color: var(--c-block-foreground);
     background: var(--c-block-background); border: 1px solid var(--c-border); cursor: pointer }
-[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner,button::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,button::-moz-focus-inner {
     border-style: none; padding: 0 }
-[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring,button:-moz-focusring {
+[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,button:-moz-focusring {
     outline: 1px dotted var(--c-block-foreground) }
 
 /* Forms */
 input, textarea, select, fieldset  {
     display: block; width: 100%; padding: var(--s2); line-height: 1;
-    color: var(--c-foreground); background: var(--c-background); border: 1px solid var(--c-border) }
-form, input:not([type="checkbox"],[type="radio"])  + *, textarea + *, select + *, fieldset + *  { margin-block-start: var(--s2) }
-input:user-invalid, select:user-invalid, textarea:user-invalid { border: 1px dashed var(--c-error) }
+    color: var(--c-foreground); background: var(--c-background);
+    border: var(--s0) solid var(--c-border) }
+input:user-invalid, select:user-invalid, textarea:user-invalid {
+    border: var(--s0) dashed var(--c-error) }
 textarea { resize: vertical; overflow: auto; min-height: calc(var(--s5) * 2) }
 [type="checkbox"],[type="radio"] { display: inline-block; width: auto }
 [type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button { height: auto }
@@ -121,28 +154,30 @@ textarea { resize: vertical; overflow: auto; min-height: calc(var(--s5) * 2) }
 [readonly], [disabled] { opacity: .6 }
 [disabled] { cursor: not-allowed }
 form label  { display: inline-block }
-form label + * { margin-block-start: var(--s1) }
+form label + *, legend + * { margin-block-start: var(--s1) }
 legend { font-weight: 700 }
-progress { vertical-align: baseline }
 
 /* Atoms - Display */
+.wrap, .wrap-sm, .wrap-lg { width: 100%; margin-inline: auto; padding: var(--s2) }
+.wrap { max-width: 960px }
+.wrap-sm { max-width: 540px }
+.wrap-lg { max-width: 1280px }
 .dn { display: none }
 .di { display: inline }
 .db { display: block }
 .o-100 { opacity: 1 }
 .o-50 { opacity: .5 }
 .o-0 { opacity: 0 }
-.container { width: 100%; max-width: 1140px; margin-inline: auto; padding: var(--s2) }
 
 /* Atoms - Flex */
 .flex { display: flex }
-.flex-col { flex-direction: column }
-.flex-wrap { flex-wrap: wrap }
-.items-center { align-items: center }
-.justify-between { justify-content: space-between }
-.justify-center { justify-content: center }
 .flex-auto { flex: 1 1 auto; min-width: 0; min-height: 0 }
 .flex-none { flex: none }
+.flex-col { flex-direction: column }
+.flex-wrap { flex-wrap: wrap }
+.flex-items-center { align-items: center }
+.flex-content-spaced { justify-content: space-between }
+.flex-content-centered { justify-content: center }
 
 /* Atoms - Sizing */
 .w-auto { width: auto }
@@ -175,10 +210,6 @@ progress { vertical-align: baseline }
 .pa3 { padding: var(--s3) }
 .pa4 { padding: var(--s4) }
 
-/* Atoms - Floats */
-.fl { float: left }
-.fr { float: right }
-.cf { clear: both }
 
 /* Atoms - Text */
 .f1 { font-size: var(--f1) }

@@ -9,7 +9,7 @@
 </head>
 
 <body id="top">
-    <header class="container">
+    <header class="wrap">
         <nav>
             <a href="#lightweight">Lightweight</a>
             <span> | </span>
@@ -22,7 +22,7 @@
             <a href="#install">Install That Shit</a>
         </nav>
     </header>
-    <main class="container">
+    <main class="wrap">
         <h1>This is a motherfucking website with a stylesheet.</h1>
         <p><i>And it's fucking perfect.</i></p>
 
@@ -206,18 +206,17 @@
                 </fieldset>
                 <fieldset>
                     <legend>Preferences</legend>
-                    <div>
+                    <p>
                         <label for="newsletter">Subscribe to newsletter:</label>
                         <input type="checkbox" id="newsletter" name="newsletter">
-                    </div>
-                    <div>
-                        <p>Are you interested in hearing about updates?</p>
+                    </p>
+                    <p>
+                        <label>Are you interested in hearing about updates?</label>
                         <label for="yes">Yes</label>
                         <input type="radio" id="yes" name="updates" value="yes">
                         <label for="no">No</label>
                         <input type="radio" id="no" name="updates" value="no">
-
-                    </div>
+                    </p>
                 </fieldset>
                 <label for="message">Message:</label>
                 <textarea id="message" name="message"></textarea>
@@ -237,15 +236,15 @@
             <pre><code>button {
   padding: var(--s3);
   font-size: var(--f4); font-weight: 700;
-  background: black;
-  color: white }
+  background: var(--c-black);
+  color: var(--c-white) }
 
 button:hover {
-  background: gray;
-  color: black }
+  background: var(--c-gray);
+  color: var(--c-black) }
 
 button:focus {
-  outline: 1px solid purple; }
+  outline: 1px solid var(--c-dark-purple); }
 
 button:disabled {
     opacity: .5 } </code></pre>
@@ -257,7 +256,10 @@ button:disabled {
                 <code>pl-4</code> or <code>px-4</code> is the right choice. Just **pure, uncut CSS**, like nature
                 intended.
             </p>
+
+            <p>See the whole motherfucking <a href="palette.html" target="_blank">color palette</a>, even Picasso doesn't have shit on this.</p>
         </section>
+
 
         <h2 id="install">Install</h2>
         <section>
@@ -299,7 +301,7 @@ button:disabled {
             <p><a href="https://github.com/pimbrouwers/motherfuckingstylesheet/pulls">Pull request</a> that motherfucker.</p>
         </section>
     </main>
-    <footer class="container">
+    <footer class="wrap">
         <p>&copy;<span id="current-year">1986</span> <a href="https://www.motherfuckingstylesheet.com">motherfuckingstylesheet.com</a></p>
     </footer>
     <script>

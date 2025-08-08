@@ -8,6 +8,15 @@ This is a **motherfucking website** with a **motherfucking stylesheet**. And it'
 
 It's a fork of the legendary [motherfuckingwebsite.com](https://motherfuckingwebsite.com/), but with just enough **style** to make your eyes weep with joy.
 
+## Features
+
+- Sensible fucking defaults for all HTML elements
+- A color system that doesn't make your eyes bleed
+- Readable typography that doesn't require 15 webfonts
+- Just enough atomic utilities to handle edge cases
+- Dark mode support for night-dwelling developers
+- All in ~8kb (< 4kb gzipped)
+
 ## Why This Exists
 
 Minimal CSS should be beautiful **and practical**. This stylesheet makes your site look great **without** turning your HTML into a graveyard of class names.
@@ -28,19 +37,19 @@ Or don't. I'm not your dad.
 
 If you want to live dangerously, copy-paste the styles directly into your `<head>`, because importing stylesheets is for cowards.
 
-## For real
+## Why?
 
 The past several years I've been swirling and intermingling the concepts of atomic and classless CSS. I love elements of both. With classless CSS you can achieve a remarkable aesthetic using only semantic HTML. Love this. Atomic CSS creates a wonderful uniformity by imposing a design system and consistency by means of convention.
 
 Both approaches aren't without their limitations either. Classless can truly only take you so far, before bespoke CSS is necessary. At which point you're now left to conjure up the same sorts of concepts you would on every project: spacing, color paletee, font sizes etc. Atomic CSS on the other hand can lead to crazy, obscure class definitions that begin losing all meaning (i.e., buttons are a great example of this).
 
-This project is an attempt to have a (satirical) conversation about marrying the two. A classless CSS reset that gets out of your way. With a design system, by way of CSS variables, that can be applied to any project (not unlike an atomic CSS library). And perhaps most importantly can be easily customized by augmenting the CSS variables in your own stylesheet.
+This project is an attempt to have a (satirical) conversation about marrying the two. A classless CSS reset that gets out of your way. With a design system, by way of CSS variables and a few hand-picked atomic classes, that can be applied to any project (not unlike an atomic CSS library). And perhaps most importantly can be easily customized by augmenting the CSS variables in your own stylesheet.
 
 I knew I wanted:
 - a CSS reset
 - defined spacing
 - defined font sizes
 - defined color palette
-- a beautiful base font pairing
+- a beautiful base font
 
-I have really enjoyed the process of creating this project. I hope you enjoy it too.
+I think this stylesheet strikes a nice balance of all of these things and packs a ton of value into ~8kb of CSS (< 4kb gzipped). It's not the smallest, or the smartest classless CSS starter. But it'll punch you right in the face, and I like that. I really enjoyed the process of creating this project. I hope you enjoy it too.
