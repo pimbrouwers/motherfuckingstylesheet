@@ -19,7 +19,7 @@
     --lh-solid: 1;
 
     --c-black: hsl(0,0%, 7%);
-    --c-near-black: hsl(0, 0%, 20%);
+    --c-near-black: hsl(0, 0%, 15%);
     --c-white: hsl(0, 0%, 100%);
     --c-gray: hsl(0, 0%, 75%);
     --c-light-gray: hsl(0, 0%, 95%);
@@ -76,17 +76,19 @@
     font-family: inherit; font-size: 100%; color: inherit }
 html {
     line-height: var(--lh); text-size-adjust: 100%;
-    font-family: var(--font); font-weight: 400; font-style: normal; font-size: 16px;
+    font-size: clamp(14px, 2vw, 16px); font-family: var(--font); font-weight: 400; font-style: normal;
     background: var(--c-background); color: var(--c-foreground) }
 main { display: block }
 template { display: none }
 [hidden] { display: none }
-p, ol, ol ol, ul, ul ul, dl, table, blockquote, details, pre, form,
+h1 + *, h2 + *, h3 + *, h4 + *, h5 + *, h6 + *,
+p, ol, ol ol, ul, ul ul, li, dl, table, blockquote, details, pre, form,
 input:not([type="checkbox"],[type="radio"])  + *, textarea + *, select + *, fieldset + * {
     margin-block-start: var(--s3) }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 { margin-block-start: var(--s4) }
+h1, h2, h3, h4, h5, h6 { margin-block-start: var(--s4); font-weight: 600 }
+h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6 { margin-block-start: var(--s1) }
 h1 { font-size: var(--f1) }
 h2 { font-size: var(--f2) }
 h3 { font-size: var(--f3) }
@@ -119,7 +121,7 @@ blockquote { padding: var(--s2); border-left: var(--s1) solid var(--c-border) }
 table { width: 100%; border-collapse: collapse; text-align: left; vertical-align: top }
 table caption { margin-bottom: var(--s1); font-style: italic }
 th, td { padding: var(--s1); border-bottom: var(--s0) solid var(--c-border) }
-th { font-weight: 700 }
+th { font-weight: 700; border-width: 3px }
 tfoot > tr > * { border-top-style: solid; border-top-width: var(--s0); border-bottom-width: 0 }
 
 /* Media */
@@ -139,7 +141,7 @@ button, .button, input[type='submit'], input[type='reset'], input[type='button']
     outline: 1px dotted var(--c-block-foreground) }
 
 /* Forms */
-input, textarea, select, fieldset  {
+input, textarea, select, fieldset, .input  {
     display: block; width: 100%; padding: var(--s2); line-height: 1;
     color: var(--c-foreground); background: var(--c-background);
     border: var(--s0) solid var(--c-border) }
