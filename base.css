@@ -166,10 +166,15 @@ legend { font-weight: 700 }
 .wrap-lg { max-width: 1280px }
 .dn { display: none }
 .di { display: inline }
+.dib { display: inline-block }
 .db { display: block }
 .o-100 { opacity: 1 }
 .o-50 { opacity: .5 }
 .o-0 { opacity: 0 }
+.cf { clear: both; overflow: hidden }
+.fl { float: left }
+.fr { float: right }
+
 
 /* Atoms - Flex */
 .flex { display: flex }
@@ -211,7 +216,6 @@ legend { font-weight: 700 }
 .pa2 { padding: var(--s2) }
 .pa3 { padding: var(--s3) }
 .pa4 { padding: var(--s4) }
-
 
 /* Atoms - Text */
 .f1 { font-size: var(--f1) }
