@@ -7,42 +7,136 @@
     <title>Motherfucking Stylesheet</title>
     <link rel="stylesheet" href="base.css">
     <style>
-        .palette { padding-top: 50% }
-        .palette__variants { clear: both }
-        .palette__variant { float:left; width: 50%; padding-top: 50% }
-        .palette__label { display: inline-block; padding: .25rem }
+        .palette {
+            padding-top: 50%
+        }
 
-        .palette--gray { background: var(--c-light-gray); color: var(--c-dark-gray) }
-        .palette--gray .palette__variant--primary { background: var(--c-gray) }
-        .palette--gray .palette__variant--dark { background: var(--c-dark-gray); color: var(--c-light-gray) }
+        .palette__variants {
+            clear: both
+        }
 
-        .palette--red { background: var(--c-light-red); color: var(--c-dark-red) }
-        .palette--red .palette__variant--primary { background: var(--c-red) }
-        .palette--red .palette__variant--dark { background: var(--c-dark-red); color: var(--c-light-red) }
+        .palette__variant {
+            float: left;
+            width: 50%;
+            padding-top: 50%
+        }
 
-        .palette--pink { background: var(--c-light-pink); color: var(--c-dark-pink) }
-        .palette--pink .palette__variant--primary { background: var(--c-pink) }
-        .palette--pink .palette__variant--dark { background: var(--c-dark-pink); color: var(--c-light-pink) }
+        .palette__label {
+            display: inline-block;
+            padding: .25rem
+        }
 
-        .palette--purple { background: var(--c-light-purple); color: var(--c-dark-purple) }
-        .palette--purple .palette__variant--primary { background: var(--c-purple) }
-        .palette--purple .palette__variant--dark { background: var(--c-dark-purple); color: var(--c-light-purple) }
+        .palette--gray {
+            background: var(--c-light-gray);
+            color: var(--c-dark-gray)
+        }
 
-        .palette--blue { background: var(--c-light-blue); color: var(--c-dark-blue) }
-        .palette--blue .palette__variant--primary { background: var(--c-blue) }
-        .palette--blue .palette__variant--dark { background: var(--c-dark-blue); color: var(--c-light-blue) }
+        .palette--gray .palette__variant--primary {
+            background: var(--c-gray)
+        }
 
-        .palette--green { background: var(--c-light-green); color: var(--c-dark-green) }
-        .palette--green .palette__variant--primary { background: var(--c-green) }
-        .palette--green .palette__variant--dark { background: var(--c-dark-green); color: var(--c-light-green) }
+        .palette--gray .palette__variant--dark {
+            background: var(--c-dark-gray);
+            color: var(--c-light-gray)
+        }
 
-        .palette--yellow { background: var(--c-light-yellow); color: var(--c-dark-yellow) }
-        .palette--yellow .palette__variant--primary { background: var(--c-yellow) }
-        .palette--yellow .palette__variant--dark { background: var(--c-dark-yellow); color: var(--c-light-yellow) }
+        .palette--red {
+            background: var(--c-light-red);
+            color: var(--c-dark-red)
+        }
 
-        .palette--orange { background: var(--c-light-orange); color: var(--c-dark-orange) }
-        .palette--orange .palette__variant--primary { background: var(--c-orange) }
-        .palette--orange .palette__variant--dark { background: var(--c-dark-orange); color: var(--c-light-orange) }
+        .palette--red .palette__variant--primary {
+            background: var(--c-red)
+        }
+
+        .palette--red .palette__variant--dark {
+            background: var(--c-dark-red);
+            color: var(--c-light-red)
+        }
+
+        .palette--pink {
+            background: var(--c-light-pink);
+            color: var(--c-dark-pink)
+        }
+
+        .palette--pink .palette__variant--primary {
+            background: var(--c-pink)
+        }
+
+        .palette--pink .palette__variant--dark {
+            background: var(--c-dark-pink);
+            color: var(--c-light-pink)
+        }
+
+        .palette--purple {
+            background: var(--c-light-purple);
+            color: var(--c-dark-purple)
+        }
+
+        .palette--purple .palette__variant--primary {
+            background: var(--c-purple)
+        }
+
+        .palette--purple .palette__variant--dark {
+            background: var(--c-dark-purple);
+            color: var(--c-light-purple)
+        }
+
+        .palette--blue {
+            background: var(--c-light-blue);
+            color: var(--c-dark-blue)
+        }
+
+        .palette--blue .palette__variant--primary {
+            background: var(--c-blue)
+        }
+
+        .palette--blue .palette__variant--dark {
+            background: var(--c-dark-blue);
+            color: var(--c-light-blue)
+        }
+
+        .palette--green {
+            background: var(--c-light-green);
+            color: var(--c-dark-green)
+        }
+
+        .palette--green .palette__variant--primary {
+            background: var(--c-green)
+        }
+
+        .palette--green .palette__variant--dark {
+            background: var(--c-dark-green);
+            color: var(--c-light-green)
+        }
+
+        .palette--yellow {
+            background: var(--c-light-yellow);
+            color: var(--c-dark-yellow)
+        }
+
+        .palette--yellow .palette__variant--primary {
+            background: var(--c-yellow)
+        }
+
+        .palette--yellow .palette__variant--dark {
+            background: var(--c-dark-yellow);
+            color: var(--c-light-yellow)
+        }
+
+        .palette--orange {
+            background: var(--c-light-orange);
+            color: var(--c-dark-orange)
+        }
+
+        .palette--orange .palette__variant--primary {
+            background: var(--c-orange)
+        }
+
+        .palette--orange .palette__variant--dark {
+            background: var(--c-dark-orange);
+            color: var(--c-light-orange)
+        }
     </style>
 </head>
 
@@ -57,7 +151,6 @@
             <span> | </span>
             <a href="#other">And Beautiful As Fuck</a>
             <span> | </span>
-
             <a href="#install">Install That Shit</a>
         </nav>
     </header>
@@ -106,11 +199,7 @@
             <li>
                 <div id="responsive"><strong>It's responsive</strong></div>
 
-                <p>You dumbass. You thought you needed media queries to be responsive, but no. Responsive means that it
-                    responds
-                    to whatever motherfucking screensize it's viewed on. This site doesn't care if you're on an iMac or
-                    a
-                    motherfucking Tamagotchi.</p>
+                <p>You dumbass. You thought you needed media queries to be responsive, but no. Responsive means that it responds to whatever motherfucking screensize it's viewed on. This site doesn't care if you're on an iMac or a motherfucking Tamagotchi.</p>
             </li>
             <li>
                 <div id="works"><strong>It fucking works</strong></div>
@@ -120,13 +209,11 @@
                     fuck's in
                     this fucking site. That's semantics, motherfucker.</p>
 
-                <p>It has content on the fucking screen. Your site has three bylines and link to your dribbble account,
-                    but you
-                    spread it over 7 full screens and make me click some bobbing button to show me how cool the jQuery
-                    ScrollTo
-                    plugin is.</p>
+                <p>It has content on the fucking screen. Your site has three bylines and link to your dribbble account, but you spread it over 7 full screens and make me click some bobbing button to show me how cool the jQuery ScrollTo plugin is.</p>
 
                 <p>Cross-browser compatibility? Load this motherfucker in IE6. I fucking dare you.</p>
+
+                <p>Automatic dark mode? We got that shit.</p>
             </li>
         </ol>
 
@@ -224,7 +311,8 @@
             <h3>Other shit</h3>
             <p>60% of the time it works everytime</p>
             <meter value="0.6">60% of the time it works everytime</meter>
-            <p>Ya, there's a godamn <a href="#palette" target="_blank">color palette</a>, even Picasso doesn't have shit on this.</p>
+            <p>Ya, there's a godamn <a href="#palette">color palette</a>, even Picasso doesn't have shit
+                on this.</p>
 
             <h3>Fill out this shit</h3>
             <form>
@@ -264,15 +352,20 @@
 
         <h2>Atomic Classes: Just Enough To Not Lose Your Shit</h2>
         <section>
-            <p>Look, sometimes you need a utility class. Not the whole fucking utility buffet that makes your HTML look like it was written by a cat walking across your keyboard:</p>
+            <p>Look, sometimes you need a utility class. Not the whole fucking utility buffet that makes your HTML look
+                like it was written by a cat walking across your keyboard:</p>
 
             <pre><code>&lt;div class="flex flex-col md:flex-row justify-between items-center px-4 py-6 mx-auto rounded-lg shadow-md bg-white dark:bg-gray-800 hover:shadow-xl transition-all duration-300"&gt;Kill me now&lt;/div&gt;</code></pre>
 
             <p>Seriously, what the fuck is that? A <strong>div</strong>, or a goddamn spaceship control panel?</p>
 
-            <p>Instead, this stylesheet gives you <strong>just enough</strong> utilities to handle edge cases without turning your markup into alphabet soup:</p>
+            <p>Instead, this stylesheet gives you <strong>just enough</strong> utilities to handle edge cases without
+                turning your markup into alphabet soup:</p>
 
-            <p>Each utility connects to the same variables as the rest of your stylesheet, so everything stays <strong>consistent</strong>. Your margins will match your paddings will match your borders. Like a civilized fucking design system should.</p>
+            <p>Each utility connects to the same variables as the rest of your stylesheet, so everything stays
+                <strong>consistent</strong>. Your margins will match your paddings will match your borders. Like a
+                civilized fucking design system should.
+            </p>
 
             <pre><code>.flex { display: flex }
 .w-100 { width: 100% }
@@ -283,7 +376,8 @@
 
             <p>Look at that. <strong>Minimal. Purposeful. Fucking useful.</strong></p>
 
-            <p>Want to see <a href="#atoms">all the atomic classes</a>? They're at the bottom of the page. There aren't many because this isn't a bloated framework.</p>
+            <p>Want to see <a href="#atoms">all the atomic classes</a>? They're at the bottom of the page. There aren't
+                many because this isn't a bloated framework.</p>
         </section>
 
         <h2 id="install">Install</h2>
@@ -323,7 +417,7 @@
 
         <h2 id="atoms">Atomic Classes</h2>
         <section>
-            <p>Want to see all the atomic classes? Here you go:</p>
+            <p>Here are all the atomic classes this stylesheet provides. They are purposefully limited to avoid overloading your HTML with bullshit.</p>
             <pre><code>/* Atoms - Display */
 .wrap, .wrap-sm, .wrap-lg { width: 100%; margin-inline: auto; padding: var(--s2) }
 .wrap { max-width: 960px }
@@ -405,133 +499,134 @@
 .br { border-radius: var(--s1) }
 </code></pre>
 
-        <h2 id="palette">Palette</h2>
-        <nav>
-            <a href="#palette-gray">gray</a>
-            <span> | </span>
-            <a href="#palette-red">red</a>
-            <span> | </span>
-            <a href="#palette-pink">pink</a>
-            <span> | </span>
-            <a href="#palette-purple">purple</a>
-            <span> | </span>
-            <a href="#palette-blue">blue</a>
-            <span> | </span>
-            <a href="#palette-green">green</a>
-            <span> | </span>
-            <a href="#palette-yellow">yellow</a>
-            <span> | </span>
-            <a href="#palette-orange">orange</a>
-        </nav>
-        <section class="w-50 cf" id="palette-gray">
-            <h3>gray</h3>
-            <blockquote>gray is the color of an overcast sky.</blockquote>
-            <br>
-            <div class="palette palette--gray">
-                <span class="palette__label">var(--c-light-gray)</span>
-                <div class="palette__variants">
-                    <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-gray)</span></div>
-                    <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-gray)</span></div>
+            <h2 id="palette">Palette</h2>
+            <nav>
+                <a href="#palette-gray">gray</a>
+                <span> | </span>
+                <a href="#palette-red">red</a>
+                <span> | </span>
+                <a href="#palette-pink">pink</a>
+                <span> | </span>
+                <a href="#palette-purple">purple</a>
+                <span> | </span>
+                <a href="#palette-blue">blue</a>
+                <span> | </span>
+                <a href="#palette-green">green</a>
+                <span> | </span>
+                <a href="#palette-yellow">yellow</a>
+                <span> | </span>
+                <a href="#palette-orange">orange</a>
+            </nav>
+            <section class="w-50 cf" id="palette-gray">
+                <h3>gray</h3>
+                <blockquote>gray is the color of an overcast sky.</blockquote>
+                <br>
+                <div class="palette palette--gray">
+                    <span class="palette__label">var(--c-light-gray)</span>
+                    <div class="palette__variants">
+                        <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-gray)</span></div>
+                        <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-gray)</span></div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="w-50 cf" id="palette-red">
-            <h3>red</h3>
-            <blockquote>red is the color of a ripe tomato.</blockquote>
-            <br>
-            <div class="palette palette--red">
-                <span class="palette__label">var(--c-light-red)</span>
-                <div class="palette__variants">
-                    <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-red)</span></div>
-                    <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-red)</span></div>
+            <section class="w-50 cf" id="palette-red">
+                <h3>red</h3>
+                <blockquote>red is the color of a ripe tomato.</blockquote>
+                <br>
+                <div class="palette palette--red">
+                    <span class="palette__label">var(--c-light-red)</span>
+                    <div class="palette__variants">
+                        <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-red)</span></div>
+                        <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-red)</span></div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="w-50 cf" id="palette-pink">
-            <h3>pink</h3>
-            <blockquote>pink is the color of a cherry blossom.</blockquote>
-            <br>
-            <div class="palette palette--pink">
-                <span class="palette__label">var(--c-light-pink)</span>
-                <div class="palette__variants">
-                    <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-pink)</span></div>
-                    <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-pink)</span></div>
+            <section class="w-50 cf" id="palette-pink">
+                <h3>pink</h3>
+                <blockquote>pink is the color of a cherry blossom.</blockquote>
+                <br>
+                <div class="palette palette--pink">
+                    <span class="palette__label">var(--c-light-pink)</span>
+                    <div class="palette__variants">
+                        <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-pink)</span></div>
+                        <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-pink)</span></div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="w-50 cf" id="palette-purple">
-            <h3>purple</h3>
-            <blockquote>purple is the color of a ripe eggplant.</blockquote>
-            <br>
-            <div class="palette palette--purple">
-                <span class="palette__label">var(--c-light-purple)</span>
-                <div class="palette__variants">
-                    <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-purple)</span></div>
-                    <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-purple)</span></div>
+            <section class="w-50 cf" id="palette-purple">
+                <h3>purple</h3>
+                <blockquote>purple is the color of a ripe eggplant.</blockquote>
+                <br>
+                <div class="palette palette--purple">
+                    <span class="palette__label">var(--c-light-purple)</span>
+                    <div class="palette__variants">
+                        <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-purple)</span></div>
+                        <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-purple)</span></div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="w-50 cf" id="palette-blue">
-            <h3>blue</h3>
-            <blockquote>blue is the color of a clear sky.</blockquote>
-            <br>
-            <div class="palette palette--blue">
-                <span class="palette__label">var(--c-light-blue)</span>
-                <div class="palette__variants">
-                    <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-blue)</span></div>
-                    <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-blue)</span></div>
+            <section class="w-50 cf" id="palette-blue">
+                <h3>blue</h3>
+                <blockquote>blue is the color of a clear sky.</blockquote>
+                <br>
+                <div class="palette palette--blue">
+                    <span class="palette__label">var(--c-light-blue)</span>
+                    <div class="palette__variants">
+                        <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-blue)</span></div>
+                        <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-blue)</span></div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="w-50 cf" id="palette-green">
-            <h3>green</h3>
-            <blockquote>green is the color of a fresh lime.</blockquote>
-            <br>
-            <div class="palette palette--green">
-                <span class="palette__label">var(--c-light-green)</span>
-                <div class="palette__variants">
-                    <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-green)</span></div>
-                    <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-green)</span></div>
+            <section class="w-50 cf" id="palette-green">
+                <h3>green</h3>
+                <blockquote>green is the color of a fresh lime.</blockquote>
+                <br>
+                <div class="palette palette--green">
+                    <span class="palette__label">var(--c-light-green)</span>
+                    <div class="palette__variants">
+                        <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-green)</span></div>
+                        <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-green)</span></div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="w-50 cf" id="palette-yellow">
-            <h3>yellow</h3>
-            <blockquote>yellow is the color of a ripe banana.</blockquote>
-            <br>
-            <div class="palette palette--yellow">
-                <span class="palette__label">var(--c-light-yellow)</span>
-                <div class="palette__variants">
-                    <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-yellow)</span></div>
-                    <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-yellow)</span></div>
+            <section class="w-50 cf" id="palette-yellow">
+                <h3>yellow</h3>
+                <blockquote>yellow is the color of a ripe banana.</blockquote>
+                <br>
+                <div class="palette palette--yellow">
+                    <span class="palette__label">var(--c-light-yellow)</span>
+                    <div class="palette__variants">
+                        <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-yellow)</span></div>
+                        <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-yellow)</span></div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="w-50 cf" id="palette-orange">
-            <h3>orange</h3>
-            <blockquote>orange is the color of a ripe tangerine.</blockquote>
-            <br>
-            <div class="palette palette--orange">
-                <span class="palette__label">var(--c-light-orange)</span>
-                <div class="palette__variants">
-                    <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-orange)</span></div>
-                    <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-orange)</span></div>
+            <section class="w-50 cf" id="palette-orange">
+                <h3>orange</h3>
+                <blockquote>orange is the color of a ripe tangerine.</blockquote>
+                <br>
+                <div class="palette palette--orange">
+                    <span class="palette__label">var(--c-light-orange)</span>
+                    <div class="palette__variants">
+                        <div class="palette__variant palette__variant--primary"><span class="palette__label">var(--c-orange)</span></div>
+                        <div class="palette__variant palette__variant--dark"><span class="palette__label">var(--c-dark-orange)</span></div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
 
-        <h2>Got a suggestion?</h2>
-        <section>
-            <p><a href="https://github.com/pimbrouwers/motherfuckingstylesheet/pulls">Pull request</a> that motherfucker.</p>
-        </section>
+            <h2>Got a suggestion?</h2>
+            <section>
+                <p><a href="https://github.com/pimbrouwers/motherfuckingstylesheet/pulls">Pull request</a> that
+                    motherfucker.</p>
+            </section>
     </main>
     <footer class="wrap">
         <p>&copy;<span id="current-year">1986</span> <a href="https://www.motherfuckingstylesheet.com">motherfuckingstylesheet.com</a></p>
@@ -544,11 +639,11 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJFKJQH586"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-RJFKJQH586');
+        gtag('config', 'G-RJFKJQH586');
     </script>
 </body>
 
